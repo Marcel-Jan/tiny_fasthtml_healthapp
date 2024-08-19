@@ -30,7 +30,7 @@ def home():
                      Button("Submit"),
                      action="/saved", method="post"))
 
-@app.route("/", methods=['post'])
+@app.route("/saved", methods=['post'])
 def post(weight:float, bmi:float):
     """ post function
     This inserts the weight and bmi into the database
